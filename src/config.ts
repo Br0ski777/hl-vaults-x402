@@ -31,6 +31,36 @@ Do NOT use for whale positions -- use hyperliquid_track_whale_positions. Do NOT 
           limit: { type: "number", description: "Max vaults to return (default: 20)" },
         },
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "count": {
+              "type": "number",
+              "description": "Number of vaults returned"
+            },
+            "totalVaults": {
+              "type": "number",
+              "description": "Total vaults available"
+            },
+            "sortedBy": {
+              "type": "string",
+              "description": "Sort order"
+            },
+            "vaults": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "cachedUntil": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "count",
+            "vaults"
+          ]
+        },
     },
   ],
 };
