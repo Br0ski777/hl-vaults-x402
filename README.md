@@ -35,7 +35,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `hyperliquid_get_vault_data` | GET | `/api/vaults` | $0.003 | Get Hyperliquid vault summaries sorted by APR |
+| `hyperliquid_get_vault_data` | GET | `/api/vaults` | $0.008 | Get Hyperliquid vault summaries sorted by APR |
 
 ### `hyperliquid_get_vault_data`
 
